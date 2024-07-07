@@ -3,7 +3,7 @@
         Job Listings
     </x-slot:heading>
 
-    <div>
+    <div class="flex flex-col gap-4">
         @foreach ($jobs as $job)
             <a href="/jobs/{{ $job['id'] }}" class="block rounded-lg border border-gray-200 px-4 py-6">
                 <div class="text-sm font-bold text-orange-500">{{ $job->employer->name }}</div>
