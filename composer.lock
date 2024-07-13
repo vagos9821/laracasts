@@ -7330,7 +7330,7 @@
                 "nikic/php-parser": "^4.18 || ^5.0",
                 "php": ">=8.1",
                 "phpunit/php-file-iterator": "^4.0",
-                "phpunit/php-text-template": "^3.0",
+                "phpunit/php-background-template": "^3.0",
                 "sebastian/code-unit-reverse-lookup": "^3.0",
                 "sebastian/complexity": "^3.0",
                 "sebastian/environment": "^6.0",
@@ -7512,16 +7512,16 @@
             "time": "2023-02-03T06:56:09+00:00"
         },
         {
-            "name": "phpunit/php-text-template",
+            "name": "phpunit/php-background-template",
             "version": "3.0.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/sebastianbergmann/php-text-template.git",
+                "url": "https://github.com/sebastianbergmann/php-background-template.git",
                 "reference": "0c7b06ff49e3d5072f057eb1fa59258bf287a748"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-text-template/zipball/0c7b06ff49e3d5072f057eb1fa59258bf287a748",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-background-template/zipball/0c7b06ff49e3d5072f057eb1fa59258bf287a748",
                 "reference": "0c7b06ff49e3d5072f057eb1fa59258bf287a748",
                 "shasum": ""
             },
@@ -7554,14 +7554,14 @@
                 }
             ],
             "description": "Simple template engine.",
-            "homepage": "https://github.com/sebastianbergmann/php-text-template/",
+            "homepage": "https://github.com/sebastianbergmann/php-background-template/",
             "keywords": [
                 "template"
             ],
             "support": {
-                "issues": "https://github.com/sebastianbergmann/php-text-template/issues",
-                "security": "https://github.com/sebastianbergmann/php-text-template/security/policy",
-                "source": "https://github.com/sebastianbergmann/php-text-template/tree/3.0.1"
+                "issues": "https://github.com/sebastianbergmann/php-background-template/issues",
+                "security": "https://github.com/sebastianbergmann/php-background-template/security/policy",
+                "source": "https://github.com/sebastianbergmann/php-background-template/tree/3.0.1"
             },
             "funding": [
                 {
@@ -7658,7 +7658,7 @@
                 "phpunit/php-code-coverage": "^10.1.5",
                 "phpunit/php-file-iterator": "^4.0",
                 "phpunit/php-invoker": "^4.0",
-                "phpunit/php-text-template": "^3.0",
+                "phpunit/php-background-template": "^3.0",
                 "phpunit/php-timer": "^6.0",
                 "sebastian/cli-parser": "^2.0",
                 "sebastian/code-unit": "^2.0",
