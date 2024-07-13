@@ -13,7 +13,7 @@
 
                         <div class="mt-2">
                             <x-form-input name="email" id="email" placeholder="example@info.com"
-                                required></x-form-input>
+                                value="{{ old('email') }}" required></x-form-input>
 
                             <x-form-error name="email"></x-form-error>
                         </div>
@@ -23,7 +23,7 @@
                         <x-form-label for="password">Password</x-form-label>
 
                         <div class="mt-2">
-                            <x-form-input name="password" id="password" required></x-form-input>
+                            <x-form-input name="password" id="password" type="password" required></x-form-input>
 
                             <x-form-error name="password"></x-form-error>
                         </div>

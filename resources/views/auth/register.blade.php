@@ -43,20 +43,20 @@
                         <x-form-label for="password">Password</x-form-label>
 
                         <div class="mt-2">
-                            <x-form-input name="password" id="password" required></x-form-input>
+                            <x-form-input name="password" id="password" type="password" required></x-form-input>
 
                             <x-form-error name="password"></x-form-error>
                         </div>
                     </x-form-field>
 
                     <x-form-field>
-                        <x-form-label for="password_confrimation">Password Confrimation</x-form-label>
+                        <x-form-label for="password_confirmation">Password Confirmation</x-form-label>
 
                         <div class="mt-2">
-                            <x-form-input name="password_confrimation" id="password_confrimation"
+                            <x-form-input name="password_confirmation" id="password_confirmation" type="password"
                                 required></x-form-input>
 
-                            <x-form-error name="password_confrimation"></x-form-error>
+                            <x-form-error name="password_confirmation"></x-form-error>
                         </div>
                     </x-form-field>
                 </div>
