@@ -37,6 +37,7 @@
                                 <x-nav-link href="/" :active="request()->is('/')">Home</x-nav-link>
                                 <x-nav-link href="/jobs" :active="request()->is('jobs')">Jobs</x-nav-link>
                                 <x-nav-link href="/contact" :active="request()->is('contact')">Contact</x-nav-link>
+                                <x-nav-link href="/training-projects" :active="request()->is('training-projects')">Training Projects</x-nav-link>
                             </div>
                         </div>
                     </div>
@@ -85,6 +86,7 @@
                     <x-nav-link href="/" :active="request()->is('/')">Home</x-nav-link>
                     <x-nav-link href="/jobs" :active="request()->is('jobs')">Jobs</x-nav-link>
                     <x-nav-link href="/contact" :active="request()->is('contact')">Contact</x-nav-link>
+                    <x-nav-link href="/training-projects" :active="request()->is('training-projects')">Training Projects</x-nav-link>
                 </div>
                 <div class="border-t border-gray-700 pb-3 pt-4">
                     <div class="flex items-center px-5">
@@ -119,7 +121,7 @@
         </header>
 
         <main>
-            <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+            <div class="mx-auto max-w-[1440px] px-4 py-6 sm:px-6 lg:px-8">
                 {{ $slot }}
             </div>
         </main>

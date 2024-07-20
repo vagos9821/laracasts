@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\JobController;
+use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\RegisteredUserController;
 use App\Http\Controllers\SessionController;
 use Illuminate\Support\Facades\Route;
@@ -8,6 +9,12 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::view('/', 'home');
+
+Route::view('/training-projects', 'training.index');
+
+Route::controller(ProfileController::class)->group(function () {
+    Route::get('/training-projects/profile-cards', 'index');
+});
 
 Route::controller(JobController::class)->group(function () {
     Route::get('/jobs', 'index');
