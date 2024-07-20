@@ -22,7 +22,12 @@ class DatabaseSeeder extends Seeder
             'email' => 'v.sigalas@netstudio.gr',
         ]);
 
-        $this->call(JobSeeder::class);
-        $this->call(ProfileSeeder::class);
+        $this->call([
+            JobSeeder::class,
+            ProfileSeeder::class,
+            VariantSeeder::class,
+            PropertySeeder::class,
+            OptionSeeder::class,
+        ]);
     }
 }

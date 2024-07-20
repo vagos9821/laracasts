@@ -1,10 +1,11 @@
 <?php
 
-use App\Http\Controllers\JobController;
-use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\RegisteredUserController;
-use App\Http\Controllers\SessionController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\JobController;
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\SessionController;
+use App\Http\Controllers\RegisteredUserController;
 
 
 
@@ -14,6 +15,10 @@ Route::view('/training-projects', 'training.index');
 
 Route::controller(ProfileController::class)->group(function () {
     Route::get('/training-projects/profile-cards', 'index');
+});
+
+Route::controller(ProductController::class)->group(function () {
+    Route::get('/training-projects/add-to-cart', 'index');
 });
 
 Route::controller(JobController::class)->group(function () {
