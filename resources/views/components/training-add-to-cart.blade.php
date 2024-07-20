@@ -1,4 +1,4 @@
-<div class="flex w-[700px] items-center justify-center gap-4">
+<div class="flex w-[724px] items-center justify-center gap-4 rounded-xl p-6 shadow-xl">
     <div class="flex w-16 flex-col items-center justify-center gap-y-3">
         @foreach (json_decode($product->image) as $image)
             <img src="{{ $image }}" alt="{{ $product->name . '_' . $loop->iteration }}"
