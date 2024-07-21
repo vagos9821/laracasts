@@ -29,6 +29,5 @@ class OptionSeeder extends Seeder
             Option::factory()->create(['property_id' => $property, 'value' => 'L']),
             Option::factory()->create(['property_id' => $property, 'value' => 'XL']),
         ];
-        @dd($property->options);
     }
 }
