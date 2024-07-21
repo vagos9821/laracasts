@@ -11,23 +11,6 @@
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        .menu-open .menu-closed-icon {
-            display: none;
-        }
-
-        .menu-open .menu-open-icon {
-            display: block;
-        }
-
-        .menu-closed .menu-open-icon {
-            display: none;
-        }
-
-        .menu-closed .menu-closed-icon {
-            display: block;
-        }
-    </style>
 </head>
 
 <body class="h-full font-sans antialiased">
@@ -85,7 +68,7 @@
             </div>
 
             <!-- Mobile menu, show/hide based on menu state. -->
-            <div class="md:hidden" id="mobile-menu" style="display: none;">
+            <div class="hidden md:hidden" id="mobile-menu">
                 <div class="space-y-1 px-2 pb-3 pt-2 sm:px-3">
                     <x-nav-link href="/" :active="request()->is('/')">Home</x-nav-link>
                     <x-nav-link href="/jobs" :active="request()->is('jobs')">Jobs</x-nav-link>
@@ -95,7 +78,7 @@
                 <div class="border-t border-orange-600 pb-3 pt-4">
                     <div class="flex items-center px-5">
                         <div class="flex-shrink-0">
-                            <img class="h-10 w-10 rounded-full" src="/images/me.webp" alt="">
+                            <img class="h-10 w-10 rounded-full" src="/images/me-abs.png" alt="">
                         </div>
                         <div class="ml-3">
                             <div class="text-base font-medium leading-none text-white">Vangelis Sigalas</div>
@@ -140,11 +123,13 @@
                 const isOpen = menuButton.getAttribute('aria-expanded') === 'true';
                 menuButton.setAttribute('aria-expanded', !isOpen);
                 if (isOpen) {
-                    mobileMenu.style.display = 'none';
+                    mobileMenu.classList.add('hidden');
+                    mobileMenu.classList.remove('block');
                     menuButton.classList.remove('menu-open');
                     menuButton.classList.add('menu-closed');
                 } else {
-                    mobileMenu.style.display = 'block';
+                    mobileMenu.classList.add('block');
+                    mobileMenu.classList.remove('hidden');
                     menuButton.classList.remove('menu-closed');
                     menuButton.classList.add('menu-open');
                 }
