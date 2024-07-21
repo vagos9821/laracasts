@@ -14,7 +14,7 @@
             demanding and fast-growing work environments with commitment to reliability and consistency.
         </h3>
 
-        <ul class="italic text-xl">
+        <ul class="text-xl italic">
             <li><span>🌱</span> I'm currently learning frameworks, courses etc.</li>
             <li><span>💬</span> Ask me about JavaScript, React, Python etc.</li>
             <li><span>📫</span> How to reach me vangelissigalas@gmail.com</li>
@@ -96,7 +96,7 @@
             </p>
         </h3>
 
-        <div class="flex items-center justify-center gap-6">
+        <div class="flex items-start justify-center gap-6">
             <a href="https://app.daily.dev/vagsig" target="_blank" rel="nofollow" class="">
                 <img src="https://api.daily.dev/devcards/v2/rM1zzQ7Mb7LxpwCwE0KbE.png?type=default&r=bgc"
                     class="w-[356px] rounded-[2.5rem] shadow-2xl" alt="Evangelos Sigalas's Dev Card" />

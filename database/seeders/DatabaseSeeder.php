@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Employer;
 use App\Models\Job;
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
@@ -16,10 +17,15 @@ class DatabaseSeeder extends Seeder
     {
         // User::factory(10)->create();
 
-        User::factory()->create([
+        $user = User::factory()->create([
             'first_name' => 'Vangelis',
             'last_name' => 'Sigalas',
             'email' => 'v.sigalas@netstudio.gr',
+        ]);
+
+        Employer::factory()->create([
+            'user_id' => $user,
+            'name' => 'Vangelis Sigalas',
         ]);
 
         $this->call([
@@ -28,6 +34,7 @@ class DatabaseSeeder extends Seeder
             VariantSeeder::class,
             PropertySeeder::class,
             OptionSeeder::class,
+            RecipeSeeder::class,
         ]);
     }
 }

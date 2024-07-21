@@ -5,6 +5,7 @@ use App\Http\Controllers\JobController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\RecipeController;
 use App\Http\Controllers\SessionController;
 use App\Http\Controllers\RegisteredUserController;
 
@@ -19,6 +20,7 @@ Route::get('/training-projects/add-to-cart', [ProductController::class, 'index']
 Route::view('/training-projects/mobile-navigation', 'training.mobile-navigation.index');
 Route::get('/training-projects/contact-us', [ContactController::class, 'index']);
 Route::post('/training-projects/contact-us', [ContactController::class, 'send'])->name('training.contact-us.send');
+Route::get('/training-projects/recipe', [RecipeController::class, 'index']);
 
 Route::controller(JobController::class)->group(function () {
     Route::get('/jobs', 'index');

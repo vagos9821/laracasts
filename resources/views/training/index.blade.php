@@ -32,5 +32,13 @@
             <x-slot:description>A contact us page.</x-slot:description>
             <x-slot:link>https://dev.to/bigsondev/100-free-frontend-challenges-3f0</x-slot:link>
         </x-training.projects-card>
+
+        <x-training.projects-card>
+            <x-slot:projectLink>/training-projects/recipe</x-slot:projectLink>
+            <x-slot:title>100 Free Frontend Challenges</x-slot:title>
+            <x-slot:project>Recipe</x-slot:project>
+            <x-slot:description>A delightful recipe display.</x-slot:description>
+            <x-slot:link>https://dev.to/bigsondev/100-free-frontend-challenges-3f0</x-slot:link>
+        </x-training.projects-card>
     </div>
 </x-layout>
