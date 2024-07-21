@@ -13,13 +13,9 @@ Route::view('/', 'home');
 
 Route::view('/training-projects', 'training.index');
 
-Route::controller(ProfileController::class)->group(function () {
-    Route::get('/training-projects/profile-cards', 'index');
-});
-
-Route::controller(ProductController::class)->group(function () {
-    Route::get('/training-projects/add-to-cart', 'index');
-});
+Route::get('/training-projects/profile-cards', [ProfileController::class, 'index']);
+Route::get('/training-projects/add-to-cart', [ProductController::class, 'index']);
+Route::view('/training-projects/mobile-navigation', 'training.mobile-navigation.index');
 
 Route::controller(JobController::class)->group(function () {
     Route::get('/jobs', 'index');
