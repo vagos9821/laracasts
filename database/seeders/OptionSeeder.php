@@ -14,14 +14,21 @@ class OptionSeeder extends Seeder
      */
     public function run()
     {
-        Property::where('name', 'size')->each(function ($property) {
-            Option::factory()->create(['property_id' => $property->id, 'value' => 'S']);
-            Option::factory()->create(['property_id' => $property->id, 'value' => 'M']);
-            Option::factory()->create(['property_id' => $property->id, 'value' => 'L']);
-            Option::factory()->create(['property_id' => $property->id, 'value' => 'XL']);
+        Property::all()->each(function ($property) {
+            if ($property->name != 'size') {
+                Option::factory()->count(4)->create(['property_id' => $property->id]);
+            }
         });
-        Property::whereNot('name', 'size')->each(function ($property) {
-            Option::factory()->count(4)->create(['property_id' => $property->id]);
-        });
+
+        $property = Property::factory()->create([
+            'name' => 'size',
+        ]);
+        $property->options = [
+            Option::factory()->create(['property_id' => $property, 'value' => 'S']),
+            Option::factory()->create(['property_id' => $property, 'value' => 'M']),
+            Option::factory()->create(['property_id' => $property, 'value' => 'L']),
+            Option::factory()->create(['property_id' => $property, 'value' => 'XL']),
+        ];
+        @dd($property->options);
     }
 }

@@ -34,7 +34,7 @@
         </h3>
 
         <h3 class="flex flex-col gap-4 text-xl">Languages and Tools:
-            <p class="flex gap-6">
+            <p class="flex flex-wrap gap-6">
                 <a href="https://developer.android.com" target="_blank" rel="noreferrer">
                     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg"
                         alt="android" width="40" height="40" /> </a> <a href="https://www.arduino.cc/"
@@ -96,7 +96,7 @@
             </p>
         </h3>
 
-        <div class="flex items-start justify-center gap-6">
+        <div class="flex flex-wrap items-start justify-center gap-6">
             <a href="https://app.daily.dev/vagsig" target="_blank" rel="nofollow" class="">
                 <img src="https://api.daily.dev/devcards/v2/rM1zzQ7Mb7LxpwCwE0KbE.png?type=default&r=bgc"
                     class="w-[356px] rounded-[2.5rem] shadow-2xl" alt="Evangelos Sigalas's Dev Card" />

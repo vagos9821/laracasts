@@ -26,7 +26,10 @@ class PropertyFactory extends Factory
     public function configure()
     {
         return $this->afterCreating(function (Property $property) {
-            Option::factory()->count(4)->create(['property_id' => $property->id]);
+            if ($property->name != 'size') {
+                Option::factory()->count(4)->create(['property_id' => $property->id]);
+            }
         });
+
     }
 }
