@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\MapController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\JobController;
 use App\Http\Controllers\ContactController;
@@ -21,6 +22,7 @@ Route::view('/training-projects/mobile-navigation', 'training.mobile-navigation.
 Route::get('/training-projects/contact-us', [ContactController::class, 'index']);
 Route::post('/training-projects/contact-us', [ContactController::class, 'send'])->name('training.contact-us.send');
 Route::get('/training-projects/recipe', [RecipeController::class, 'index']);
+Route::get('/training-projects/map', [MapController::class, 'index']);
 
 Route::controller(JobController::class)->group(function () {
     Route::get('/jobs', 'index');

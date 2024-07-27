@@ -6,7 +6,9 @@
             <strong>{{ $project }} :</strong> {{ $description }}
         </div>
     </a>
-    <x-button href="{{ $link }}" target="_blank" rel="noopener">
-        Visit Link
-    </x-button>
+    @isset($link)
+        <x-button href="{{ $link }}" target="_blank" rel="noopener">
+            Visit Link
+        </x-button>
+    @endisset
 </div>

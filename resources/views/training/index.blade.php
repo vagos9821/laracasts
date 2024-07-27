@@ -40,5 +40,14 @@
             <x-slot:description>A delightful recipe display.</x-slot:description>
             <x-slot:link>https://dev.to/bigsondev/100-free-frontend-challenges-3f0</x-slot:link>
         </x-training.projects-card>
+
+        <x-training.projects-card>
+            <x-slot:projectLink>/training-projects/map</x-slot:projectLink>
+            <x-slot:title>Original Idea</x-slot:title>
+            <x-slot:project>Fog of War Map</x-slot:project>
+            <x-slot:description>
+                A map that only the visited areas are visible, the rest are covered with a fog of war.
+            </x-slot:description>
+        </x-training.projects-card>
     </div>
 </x-layout>
