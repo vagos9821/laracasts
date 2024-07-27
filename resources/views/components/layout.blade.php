@@ -136,6 +136,27 @@
             });
         });
     </script>
+
+    <footer class="rounded-t-lg bg-orange-800 shadow">
+        <div class="mx-auto w-full max-w-screen-xl p-4 md:py-8">
+            <div class="sm:flex sm:items-center sm:justify-between">
+                <a href="https://flowbite.com/" class="mb-4 flex items-center space-x-3 rtl:space-x-reverse sm:mb-0">
+                    <img src="/images/my-logo.png" class="h-8" alt="Flowbite Logo" />
+                    <span class="self-center whitespace-nowrap text-2xl font-semibold dark:text-white">Vangelis
+                        Sigalas</span>
+                </a>
+                <div class="ml-10 flex items-baseline space-x-4">
+                    <x-nav-link href="/" :active="request()->is('/')">Home</x-nav-link>
+                    <x-nav-link href="/jobs" :active="request()->is('jobs')">Jobs</x-nav-link>
+                    <x-nav-link href="/contact" :active="request()->is('contact')">Contact</x-nav-link>
+                    <x-nav-link href="/training-projects" :active="request()->is('training-projects')">Training Projects</x-nav-link>
+                </div>
+            </div>
+            <hr class="my-6 border-gray-300 sm:mx-auto lg:my-8" />
+            <span class="block text-sm text-gray-300 sm:text-center">© 2024 <a href="https://flowbite.com/"
+                    class="hover:underline">Vangelis Sigalas™</a>. All Rights Reserved.</span>
+        </div>
+    </footer>
 </body>
 
 </html>
